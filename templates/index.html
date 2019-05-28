@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>孫忠佑 碩士論文簡介</title>
+</head>
+<body>
+    <h1>孫忠佑 alkmo@yahoo.com.tw 0975539338 <br>論文題目:利用特高頻雷達波束成形技術定位船舶軌跡
+    <br>目的:分析海面回波之雷達資料，並以資料中所包含之船舶回波訊息，建立以波束成形技術定位船舶方位之演算法。</h1>
+    <hr>
+    {% for post in posts %}
+        <p style="font-family:微軟正黑體 ;font-size:16pt;font-weight:bold;">
+
+            <a href="/post/{{post.slug}}">{{post.title}}</a>
+        </p>
+
+    {% endfor %}
+    <hr>
+    <h3>Now:{{ now }}</h3>
+</body>
+</html>
